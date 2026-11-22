@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0E1116</color>
+    <color name="panel">#E6121820</color>
+    <color name="accent">#7CF2D4</color>
+    <color name="caption">#FFFFFF</color>
+    <color name="caption_dim">#FFC48C</color>
+    <color name="text_dim">#B8C2CC</color>
+    <color name="text_faint">#7A8590</color>
+    <color name="button">#7CF2D4</color>
+    <color name="button_active">#FF6B6B</color>
+    <color name="button_disabled">#3A4450</color>
+    <color name="button_text">#0E1116</color>
+    <color name="ic_bg">#0E1116</color>
+</resources>

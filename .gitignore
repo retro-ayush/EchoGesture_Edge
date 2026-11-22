@@ -28,3 +28,12 @@ logs/
 
 # macOS metadata files on exFAT drives
 ._*
+
+# Android build outputs (the APK is published as a release asset, not committed)
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+dist/
+# Derived from WLASL test clips: regenerate with android/tools/make_device_fixture.py
+android/app/src/androidTest/assets/device_fixture.json

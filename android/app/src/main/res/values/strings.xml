@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EchoGesture</string>
+    <string name="brand">ECHOGESTURE EDGE</string>
+    <string name="starting">Starting camera…</string>
+    <string name="loading">Loading models…</string>
+    <string name="ready">Ready to capture a sign</string>
+    <string name="ready_detail">Tap Start, sign one word (%1$d-word ASL vocabulary), tap Finish.</string>
+    <string name="start">Start sign</string>
+    <string name="finish">Finish</string>
+    <string name="capturing">Capturing…</string>
+    <string name="capturing_detail">%1$d frames. Sign one word, then tap Finish.</string>
+    <string name="too_short">Capture more frames</string>
+    <string name="too_short_detail">Hold Start a little longer: sign the whole word.</string>
+    <string name="too_long">Capture too long. Try one word.</string>
+    <string name="uncertain">Uncertain (%1$s?) – please repeat</string>
+    <string name="need_camera">Camera permission is needed</string>
+    <string name="camera_failed">Camera unavailable</string>
+    <string name="load_failed">Could not load models</string>
+    <string name="classify_failed">Classification failed</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="privacy">On-device processing · no video is stored or sent</string>
+</resources>

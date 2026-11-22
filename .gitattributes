@@ -5,3 +5,7 @@
 *.onnx binary
 *.task binary
 *.pdf binary
+*.jks binary
+*.jar binary
+*.apk binary
+android/gradlew text eol=lf
