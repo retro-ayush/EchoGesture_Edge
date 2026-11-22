@@ -4,6 +4,10 @@ from pathlib import Path
 import numpy as np
 from .features import frame_features
 
+# MediaPipe delegate: "auto" (GPU, CPU fallback; GPU landmarks gave identical val top-1,
+# 78.51 %, to the CPU-trained model), "gpu" or "cpu". Override: ECHOGESTURE_DELEGATE.
+DEFAULT_DELEGATE = "auto"
+
 DARK_P99 = 100  # 99th-percentile luma below which a frame is exposure-corrected
 TARGET_P99 = float(os.environ.get("ECHOGESTURE_ENHANCE_TARGET", 200))
 
@@ -30,7 +34,7 @@ def enhance_low_light(bgr):
 
 
 class Extractor:
-    def __init__(self, models="models", enhance=None):
+    def __init__(self, models="models", enhance=None, delegate=None):
         import mediapipe as mp
         self.mp = mp
         # Experimental exposure correction, OFF by default: on low-light val copies it
@@ -41,17 +45,35 @@ class Extractor:
         for name in ("hand_landmarker.task", "pose_landmarker_lite.task"):
             if not (root/name).is_file():
                 raise FileNotFoundError(f"Missing {root/name}; run scripts/download_models.py")
-        vision = mp.tasks.vision
-        self.hand = vision.HandLandmarker.create_from_options(
-            vision.HandLandmarkerOptions(
-                base_options=mp.tasks.BaseOptions(model_asset_path=str(root/"hand_landmarker.task")),
-                running_mode=vision.RunningMode.VIDEO, num_hands=2))
-        self.pose = vision.PoseLandmarker.create_from_options(
-            vision.PoseLandmarkerOptions(
-                base_options=mp.tasks.BaseOptions(model_asset_path=str(root/"pose_landmarker_lite.task")),
-                running_mode=vision.RunningMode.VIDEO, num_poses=1,
-                output_segmentation_masks=False))
+        self.delegate = self._create(mp, root, delegate or os.environ.get("ECHOGESTURE_DELEGATE", DEFAULT_DELEGATE))
         self.last_timestamp = -1
+
+    def _create(self, mp, root, delegate):
+        """delegate: "gpu", "cpu" or "auto" (GPU, falling back to CPU where
+        MediaPipe has no GPU support, e.g. Windows Python wheels)."""
+        if delegate not in ("auto", "gpu", "cpu"):
+            raise ValueError("delegate must be auto, gpu or cpu")
+        order = ["gpu", "cpu"] if delegate == "auto" else [delegate]
+        error = None
+        for name in order:
+            try:
+                d = mp.tasks.BaseOptions.Delegate.GPU if name == "gpu" else mp.tasks.BaseOptions.Delegate.CPU
+                self._build(mp, root, d)
+                return name
+            except Exception as e:  # no GPU support on this platform
+                error = e
+        raise RuntimeError(f"Could not create MediaPipe landmarkers: {error}")
+
+    def _build(self, mp, root, d):
+        vision = mp.tasks.vision
+        base = lambda f: mp.tasks.BaseOptions(model_asset_path=str(root/f), delegate=d)  # noqa: E731
+        self.hand = vision.HandLandmarker.create_from_options(
+            vision.HandLandmarkerOptions(base_options=base("hand_landmarker.task"),
+                                         running_mode=vision.RunningMode.VIDEO, num_hands=2))
+        self.pose = vision.PoseLandmarker.create_from_options(
+            vision.PoseLandmarkerOptions(base_options=base("pose_landmarker_lite.task"),
+                                         running_mode=vision.RunningMode.VIDEO, num_poses=1,
+                                         output_segmentation_masks=False))
 
     def frame(self, bgr, timestamp_ms):
         import cv2
@@ -59,8 +81,13 @@ class Extractor:
         self.last_timestamp = timestamp_ms
         if self.enhance:
             bgr = enhance_low_light(bgr)
-        image = self.mp.Image(image_format=self.mp.ImageFormat.SRGB,
-                              data=cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB))
+        # GPU delegate needs 4-channel input; the pixels are identical.
+        if self.delegate == "gpu":
+            image = self.mp.Image(image_format=self.mp.ImageFormat.SRGBA,
+                                  data=cv2.cvtColor(bgr, cv2.COLOR_BGR2RGBA))
+        else:
+            image = self.mp.Image(image_format=self.mp.ImageFormat.SRGB,
+                                  data=cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB))
         p = self.pose.detect_for_video(image, timestamp_ms)
         h = self.hand.detect_for_video(image, timestamp_ms)
         pose_xy, vis = None, None
@@ -97,6 +124,7 @@ def video_features(video_path, models="models", max_frames=1800, timing=None):
         extractor = Extractor(models)
         if timing is not None:
             timing["extractor_init_ms"] = (perf_counter()-start)*1000
+            timing["delegate"] = extractor.delegate
         fps = cap.get(cv2.CAP_PROP_FPS)
         if not np.isfinite(fps) or fps <= 0:
             fps = 30.0

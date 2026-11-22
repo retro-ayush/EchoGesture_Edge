@@ -57,5 +57,6 @@ class Predictor:
                        "latency_ms":total_ms,
                        "extraction_latency_ms":extraction_ms,
                        "extractor_init_ms":timing.get("extractor_init_ms"),
+                       "mediapipe_delegate":timing.get("delegate"),
                        "frames_processed":len(base)})
         return result

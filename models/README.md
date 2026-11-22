@@ -2,10 +2,10 @@
 
 | File | What it is |
 |---|---|
-| `echogesture.int8.onnx` | **Deployed classifier** (0.98 MB): 4-member temporal-CNN ensemble with in-graph mirror test-time augmentation, static INT8 QDQ. Used by `predict.py`, the evaluator and the demo. |
-| `echogesture.int8.json` | Its metadata: label order (WLASL100), calibrated temperature (0.79), HUD threshold (0.55), ensemble members, split audit. Required next to the `.onnx`. |
+| `echogesture.int8.onnx` | **Deployed classifier** (0.98 MB): 4-member temporal-CNN ensemble, trained on clean + synthetic low-light/occluded training clips, with in-graph mirror test-time augmentation, static INT8 QDQ. Used by `predict.py`, the evaluator and the demo. |
+| `echogesture.int8.json` | Its metadata: label order (WLASL100), calibrated temperature (0.80), HUD threshold (0.50), ensemble members, split audit. Required next to the `.onnx`. |
 | `echogesture.int8.fp32.onnx` / `.json` | FP32 reference of the same graph, for INT8-vs-FP32 comparison (`echogesture.validate`). |
-| `w192.json`, `s1.json`, `s2.json`, `s3.json` | Training metadata of each ensemble member (config, seed, best validation accuracy). |
+| `rw192.json`, `rs1.json`, `rs2.json`, `rs3.json` | Training metadata of each ensemble member (config, seed, best validation accuracy). |
 | `abl_no_masks.json`, `abl_no_motion.json` | Ablation runs (experiments only, not deployable). |
 | `hand_landmarker.task`, `pose_landmarker_lite.task` | Public MediaPipe extractor assets (FP16), 13.6 MB; re-download with `scripts/download_models.py`. |
 

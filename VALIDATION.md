@@ -20,9 +20,10 @@ Originally prepared 21 November 2026; trained, evaluated and updated 22 November
 - **Install matrix:** `scripts/check_install_matrix.py` dry-runs pip's resolver with each platform's wheel tags for Python 3.10, 3.11 and 3.12 on macOS Apple Silicon (12 and 14), macOS Intel, Linux x86_64 and Windows x64, for runtime and training sets: all resolve (exact pins on 3.11/3.12 except Intel Mac, which uses the direct-pin fallback). Python 3.13 and Linux aarch64 have no mediapipe wheels and are unsupported.
 - Not run here: actual installs on Windows/Linux/Intel hardware, and the Dockerfile (no Docker on this machine).
 
+- **Power:** macOS `powermetrics` (CPU+GPU+ANE combined), 149 × 1 s samples from 17:46:02 to 17:48:30, inside the full-pipeline sustained run (17:45:50-17:55:50): mean 2,209 mW (min 1,900, max 3,524). The sampler stopped after 2.5 of 10 minutes; readings were steady. Screen, camera and the rest of the system are excluded.
+
 ## Not completed
 
-- Average power (requires `sudo powermetrics`; fill with `scripts/update_results.py`).
 - The camera HUD (`demo.py`) needs an interactive camera and display; record it for the demo.
 - On-phone (Android/iOS) packaging and measurement.
 

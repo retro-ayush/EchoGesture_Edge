@@ -105,19 +105,19 @@
   "frames": 64,
   "feature_version": "body2d-handlocal3d-v1",
   "ablation": "none",
-  "best_val_accuracy": 0.78099173553719,
-  "best_epoch": 112,
-  "epochs_run": 120,
+  "best_val_accuracy": 0.7851239669421488,
+  "best_epoch": 42,
+  "epochs_run": 67,
   "lr": 0.001,
   "config": {
-    "width": 192,
+    "width": 128,
     "dropout": 0.2,
     "pool": "meanmax"
   },
   "augmentation": "strong",
   "label_smoothing": 0.1,
   "weight_decay": 0.01,
-  "seed": 4,
+  "seed": 2,
   "split_audit": {
     "signer_overlap": {
       "118": [
@@ -365,10 +365,10 @@
     },
     "signer_ids_missing": 0
   },
-  "training_clips": 1017,
+  "training_clips": 3051,
   "validation_clips": 242,
   "temperature": 1.0,
-  "manifest_sha256": "35dcb973aa0bffcbd818df827865f47d18d9ff416ba9052205c86e7742bdef68",
-  "parameters": 256612,
+  "manifest_sha256": "5f61087710e1074ba61c7d2d548ae57984a9fcd187ab081a8e4f4df552838b80",
+  "parameters": 138340,
   "note": "Validation result only; no test, mobile or robustness claim."
 }

@@ -62,7 +62,9 @@ def main():
         c_acc = accuracy_report([r["label"] for r in c_rows], [d["top5"] for d in c_details])
         robustness[path] = {"top1_percent": c_acc["top1_percent"],
                             "drop_pt": acc["top1_percent"] - c_acc["top1_percent"]}
-    runtime = "ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models"
+    delegates = sorted({str(d.get("mediapipe_delegate")) for d in details})
+    runtime = ("ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models, "
+               f"{'/'.join(delegates).upper()} delegate")
     total = latency_summary([d["latency_ms"] for d in details])
     classifier = latency_summary([d["classifier_latency_ms"] for d in details])
     metrics = []
