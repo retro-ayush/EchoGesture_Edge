@@ -1,0 +1,6 @@
+# Training and INT8 export (only needed to retrain; inference uses requirements.txt).
+-r requirements.txt
+onnx==1.16.2
+# PyTorch stopped publishing Intel-Mac wheels after 2.2.x.
+torch==2.5.1; sys_platform != "darwin" or platform_machine == "arm64"
+torch==2.2.2; sys_platform == "darwin" and platform_machine == "x86_64"

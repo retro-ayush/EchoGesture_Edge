@@ -1,0 +1,374 @@
+{
+  "labels": [
+    "BOOK",
+    "DRINK",
+    "COMPUTER",
+    "BEFORE",
+    "CHAIR",
+    "GO",
+    "CLOTHES",
+    "WHO",
+    "CANDY",
+    "COUSIN",
+    "DEAF",
+    "FINE",
+    "HELP",
+    "NO",
+    "THIN",
+    "WALK",
+    "YEAR",
+    "YES",
+    "ALL",
+    "BLACK",
+    "COOL",
+    "FINISH",
+    "HOT",
+    "LIKE",
+    "MANY",
+    "MOTHER",
+    "NOW",
+    "ORANGE",
+    "TABLE",
+    "THANKSGIVING",
+    "WHAT",
+    "WOMAN",
+    "BED",
+    "BLUE",
+    "BOWLING",
+    "CAN",
+    "DOG",
+    "FAMILY",
+    "FISH",
+    "GRADUATE",
+    "HAT",
+    "HEARING",
+    "KISS",
+    "LANGUAGE",
+    "LATER",
+    "MAN",
+    "SHIRT",
+    "STUDY",
+    "TALL",
+    "WHITE",
+    "WRONG",
+    "ACCIDENT",
+    "APPLE",
+    "BIRD",
+    "CHANGE",
+    "COLOR",
+    "CORN",
+    "COW",
+    "DANCE",
+    "DARK",
+    "DOCTOR",
+    "EAT",
+    "ENJOY",
+    "FORGET",
+    "GIVE",
+    "LAST",
+    "MEET",
+    "PINK",
+    "PIZZA",
+    "PLAY",
+    "SCHOOL",
+    "SECRETARY",
+    "SHORT",
+    "TIME",
+    "WANT",
+    "WORK",
+    "AFRICA",
+    "BASKETBALL",
+    "BIRTHDAY",
+    "BROWN",
+    "BUT",
+    "CHEAT",
+    "CITY",
+    "COOK",
+    "DECIDE",
+    "FULL",
+    "HOW",
+    "JACKET",
+    "LETTER",
+    "MEDICINE",
+    "NEED",
+    "PAINT",
+    "PAPER",
+    "PULL",
+    "PURPLE",
+    "RIGHT",
+    "SAME",
+    "SON",
+    "TELL",
+    "THURSDAY"
+  ],
+  "feature_dim": 329,
+  "frames": 64,
+  "feature_version": "body2d-handlocal3d-v1",
+  "ablation": "no_masks",
+  "best_val_accuracy": 0.7603305785123967,
+  "best_epoch": 103,
+  "epochs_run": 120,
+  "lr": 0.001,
+  "config": {
+    "width": 192,
+    "dropout": 0.2,
+    "pool": "meanmax"
+  },
+  "augmentation": "strong",
+  "label_smoothing": 0.1,
+  "weight_decay": 0.01,
+  "seed": 4,
+  "split_audit": {
+    "signer_overlap": {
+      "118": [
+        "test",
+        "train",
+        "val"
+      ],
+      "31": [
+        "test",
+        "train",
+        "val"
+      ],
+      "36": [
+        "test",
+        "train",
+        "val"
+      ],
+      "59": [
+        "test",
+        "train",
+        "val"
+      ],
+      "12": [
+        "test",
+        "train",
+        "val"
+      ],
+      "11": [
+        "test",
+        "train",
+        "val"
+      ],
+      "115": [
+        "test",
+        "train",
+        "val"
+      ],
+      "94": [
+        "test",
+        "train",
+        "val"
+      ],
+      "52": [
+        "train",
+        "val"
+      ],
+      "6": [
+        "test",
+        "train",
+        "val"
+      ],
+      "21": [
+        "test",
+        "train",
+        "val"
+      ],
+      "2": [
+        "test",
+        "train",
+        "val"
+      ],
+      "10": [
+        "test",
+        "train",
+        "val"
+      ],
+      "38": [
+        "test",
+        "train",
+        "val"
+      ],
+      "56": [
+        "test",
+        "train",
+        "val"
+      ],
+      "41": [
+        "test",
+        "train",
+        "val"
+      ],
+      "4": [
+        "test",
+        "train",
+        "val"
+      ],
+      "45": [
+        "test",
+        "train",
+        "val"
+      ],
+      "32": [
+        "test",
+        "train",
+        "val"
+      ],
+      "46": [
+        "train",
+        "val"
+      ],
+      "88": [
+        "train",
+        "val"
+      ],
+      "13": [
+        "test",
+        "train",
+        "val"
+      ],
+      "0": [
+        "test",
+        "train",
+        "val"
+      ],
+      "90": [
+        "train",
+        "val"
+      ],
+      "42": [
+        "test",
+        "train"
+      ],
+      "39": [
+        "test",
+        "train",
+        "val"
+      ],
+      "17": [
+        "test",
+        "train",
+        "val"
+      ],
+      "89": [
+        "test",
+        "train",
+        "val"
+      ],
+      "102": [
+        "test",
+        "train",
+        "val"
+      ],
+      "60": [
+        "train",
+        "val"
+      ],
+      "35": [
+        "test",
+        "train"
+      ],
+      "15": [
+        "test",
+        "train"
+      ],
+      "93": [
+        "train",
+        "val"
+      ],
+      "34": [
+        "test",
+        "train",
+        "val"
+      ],
+      "116": [
+        "train",
+        "val"
+      ],
+      "99": [
+        "train",
+        "val"
+      ],
+      "37": [
+        "train",
+        "val"
+      ],
+      "8": [
+        "test",
+        "train",
+        "val"
+      ],
+      "97": [
+        "test",
+        "train",
+        "val"
+      ],
+      "70": [
+        "train",
+        "val"
+      ],
+      "19": [
+        "train",
+        "val"
+      ],
+      "106": [
+        "test",
+        "val"
+      ],
+      "63": [
+        "test",
+        "train"
+      ],
+      "117": [
+        "test",
+        "val"
+      ],
+      "9": [
+        "test",
+        "train",
+        "val"
+      ],
+      "5": [
+        "test",
+        "train",
+        "val"
+      ],
+      "64": [
+        "test",
+        "train",
+        "val"
+      ],
+      "47": [
+        "test",
+        "train",
+        "val"
+      ],
+      "109": [
+        "test",
+        "train",
+        "val"
+      ],
+      "111": [
+        "train",
+        "val"
+      ],
+      "110": [
+        "test",
+        "train",
+        "val"
+      ],
+      "121": [
+        "test",
+        "train",
+        "val"
+      ]
+    },
+    "signer_ids_missing": 0
+  },
+  "training_clips": 1017,
+  "validation_clips": 242,
+  "temperature": 1.0,
+  "manifest_sha256": "35dcb973aa0bffcbd818df827865f47d18d9ff416ba9052205c86e7742bdef68",
+  "parameters": 256612,
+  "note": "Validation result only; no test, mobile or robustness claim."
+}

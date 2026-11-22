@@ -1,0 +1,15 @@
+metric,target,measured,unit,device,runtime,pass,notes
+top1_accuracy,>=70,74.0,%,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",TRUE,"200 clips, 98 classes present"
+top5_accuracy,report,89.0,%,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",INFO,
+macro_top1_accuracy,report,73.6395,%,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",INFO,
+latency_p95,<=50,5301.0751,ms,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",FALSE,Full clip: decode + MediaPipe init/tracking + classifier; see timing_details.json
+latency_p50,report,3150.3086,ms,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",INFO,
+latency_p99,report,6082.0732,ms,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",INFO,
+latency_per_frame_p95,<=50 (streaming),57.5595,ms,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",FALSE,"Per-clip mean of decode + MediaPipe hand/pose tracking per frame (init excluded); streaming budget, NOT full-clip latency"
+classifier_latency_p95,report separately,2.7599,ms,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",INFO,Model invocation only
+extractor_init_p50,report separately,107.3609,ms,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",INFO,"MediaPipe setup per clip, included in latency_p95"
+model_size,<20,0.9833,MB,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",TRUE,Classifier ONNX only
+total_ml_assets,report separately,14.5801,MB,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",INFO,Classifier + MediaPipe hand and pose (FP16)
+accuracy_drop_robustness,<=5,21.0,pt,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",FALSE,low_light: 53.00% (+21.00 pt); occlusion: 53.50% (+20.50 pt); angle: 73.00% (+1.00 pt) | worst case reported
+avg_power,<=500,,mW,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",NOT_MEASURED,
+thermal_drift_10min,<=20,8.3279,%,"Apple M3 Mac (Mac15,12), macOS arm64, CPU","ONNX Runtime CPU 1 thread, classifier INT8 QDQ; MediaPipe FP16 models",TRUE,"full mode, 10.0 min, 182 runs; late vs early p95"

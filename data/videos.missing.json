@@ -1,0 +1,2897 @@
+[
+  {
+    "clip_id": "65225",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "68208",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07085",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07086",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07087",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07088",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07089",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07090",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07091",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07092",
+    "label": "BOOK",
+    "split": "test"
+  },
+  {
+    "clip_id": "07093",
+    "label": "BOOK",
+    "split": "test"
+  },
+  {
+    "clip_id": "07094",
+    "label": "BOOK",
+    "split": "val"
+  },
+  {
+    "clip_id": "07095",
+    "label": "BOOK",
+    "split": "test"
+  },
+  {
+    "clip_id": "07096",
+    "label": "BOOK",
+    "split": "val"
+  },
+  {
+    "clip_id": "07097",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07098",
+    "label": "BOOK",
+    "split": "val"
+  },
+  {
+    "clip_id": "07071",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07072",
+    "label": "BOOK",
+    "split": "test"
+  },
+  {
+    "clip_id": "07073",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "67424",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07077",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07078",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07079",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07080",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07081",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07082",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "07083",
+    "label": "BOOK",
+    "split": "val"
+  },
+  {
+    "clip_id": "07084",
+    "label": "BOOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "68538",
+    "label": "DRINK",
+    "split": "val"
+  },
+  {
+    "clip_id": "68660",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17726",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17727",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17729",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17730",
+    "label": "DRINK",
+    "split": "test"
+  },
+  {
+    "clip_id": "17732",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17714",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17715",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17716",
+    "label": "DRINK",
+    "split": "test"
+  },
+  {
+    "clip_id": "17717",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17718",
+    "label": "DRINK",
+    "split": "test"
+  },
+  {
+    "clip_id": "67594",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "17719",
+    "label": "DRINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "69054",
+    "label": "COMPUTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "12332",
+    "label": "COMPUTER",
+    "split": "test"
+  },
+  {
+    "clip_id": "12336",
+    "label": "COMPUTER",
+    "split": "test"
+  },
+  {
+    "clip_id": "12337",
+    "label": "COMPUTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "67519",
+    "label": "COMPUTER",
+    "split": "test"
+  },
+  {
+    "clip_id": "12321",
+    "label": "COMPUTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "12322",
+    "label": "COMPUTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "12323",
+    "label": "COMPUTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "12324",
+    "label": "COMPUTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "05748",
+    "label": "BEFORE",
+    "split": "train"
+  },
+  {
+    "clip_id": "05735",
+    "label": "BEFORE",
+    "split": "test"
+  },
+  {
+    "clip_id": "05736",
+    "label": "BEFORE",
+    "split": "val"
+  },
+  {
+    "clip_id": "05737",
+    "label": "BEFORE",
+    "split": "val"
+  },
+  {
+    "clip_id": "68580",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09865",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09866",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09867",
+    "label": "CHAIR",
+    "split": "test"
+  },
+  {
+    "clip_id": "09853",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09856",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "67483",
+    "label": "CHAIR",
+    "split": "val"
+  },
+  {
+    "clip_id": "09857",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09858",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09859",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09860",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09861",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "09862",
+    "label": "CHAIR",
+    "split": "val"
+  },
+  {
+    "clip_id": "09863",
+    "label": "CHAIR",
+    "split": "train"
+  },
+  {
+    "clip_id": "68292",
+    "label": "GO",
+    "split": "train"
+  },
+  {
+    "clip_id": "24965",
+    "label": "GO",
+    "split": "train"
+  },
+  {
+    "clip_id": "24971",
+    "label": "GO",
+    "split": "train"
+  },
+  {
+    "clip_id": "24972",
+    "label": "GO",
+    "split": "train"
+  },
+  {
+    "clip_id": "24948",
+    "label": "GO",
+    "split": "val"
+  },
+  {
+    "clip_id": "67715",
+    "label": "GO",
+    "split": "test"
+  },
+  {
+    "clip_id": "24950",
+    "label": "GO",
+    "split": "train"
+  },
+  {
+    "clip_id": "24951",
+    "label": "GO",
+    "split": "train"
+  },
+  {
+    "clip_id": "68870",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11327",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11328",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11329",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11312",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11317",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11318",
+    "label": "CLOTHES",
+    "split": "test"
+  },
+  {
+    "clip_id": "11319",
+    "label": "CLOTHES",
+    "split": "val"
+  },
+  {
+    "clip_id": "11320",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11321",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11322",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11323",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11324",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "11325",
+    "label": "CLOTHES",
+    "split": "val"
+  },
+  {
+    "clip_id": "11326",
+    "label": "CLOTHES",
+    "split": "train"
+  },
+  {
+    "clip_id": "68890",
+    "label": "WHO",
+    "split": "train"
+  },
+  {
+    "clip_id": "63241",
+    "label": "WHO",
+    "split": "train"
+  },
+  {
+    "clip_id": "63233",
+    "label": "WHO",
+    "split": "test"
+  },
+  {
+    "clip_id": "63234",
+    "label": "WHO",
+    "split": "val"
+  },
+  {
+    "clip_id": "66780",
+    "label": "WHO",
+    "split": "train"
+  },
+  {
+    "clip_id": "67066",
+    "label": "WHO",
+    "split": "train"
+  },
+  {
+    "clip_id": "63238",
+    "label": "WHO",
+    "split": "train"
+  },
+  {
+    "clip_id": "68790",
+    "label": "CANDY",
+    "split": "train"
+  },
+  {
+    "clip_id": "08928",
+    "label": "CANDY",
+    "split": "train"
+  },
+  {
+    "clip_id": "08922",
+    "label": "CANDY",
+    "split": "val"
+  },
+  {
+    "clip_id": "08923",
+    "label": "CANDY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67468",
+    "label": "CANDY",
+    "split": "val"
+  },
+  {
+    "clip_id": "67470",
+    "label": "CANDY",
+    "split": "train"
+  },
+  {
+    "clip_id": "68592",
+    "label": "COUSIN",
+    "split": "train"
+  },
+  {
+    "clip_id": "13637",
+    "label": "COUSIN",
+    "split": "train"
+  },
+  {
+    "clip_id": "13638",
+    "label": "COUSIN",
+    "split": "train"
+  },
+  {
+    "clip_id": "13639",
+    "label": "COUSIN",
+    "split": "val"
+  },
+  {
+    "clip_id": "67535",
+    "label": "COUSIN",
+    "split": "test"
+  },
+  {
+    "clip_id": "13644",
+    "label": "COUSIN",
+    "split": "train"
+  },
+  {
+    "clip_id": "13645",
+    "label": "COUSIN",
+    "split": "train"
+  },
+  {
+    "clip_id": "68586",
+    "label": "DEAF",
+    "split": "train"
+  },
+  {
+    "clip_id": "14900",
+    "label": "DEAF",
+    "split": "train"
+  },
+  {
+    "clip_id": "14901",
+    "label": "DEAF",
+    "split": "val"
+  },
+  {
+    "clip_id": "14889",
+    "label": "DEAF",
+    "split": "train"
+  },
+  {
+    "clip_id": "14891",
+    "label": "DEAF",
+    "split": "val"
+  },
+  {
+    "clip_id": "14895",
+    "label": "DEAF",
+    "split": "train"
+  },
+  {
+    "clip_id": "65717",
+    "label": "FINE",
+    "split": "test"
+  },
+  {
+    "clip_id": "21888",
+    "label": "FINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "21889",
+    "label": "FINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "21875",
+    "label": "FINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "21876",
+    "label": "FINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67660",
+    "label": "FINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67659",
+    "label": "FINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "27219",
+    "label": "HELP",
+    "split": "val"
+  },
+  {
+    "clip_id": "27220",
+    "label": "HELP",
+    "split": "val"
+  },
+  {
+    "clip_id": "27210",
+    "label": "HELP",
+    "split": "train"
+  },
+  {
+    "clip_id": "27211",
+    "label": "HELP",
+    "split": "train"
+  },
+  {
+    "clip_id": "27212",
+    "label": "HELP",
+    "split": "train"
+  },
+  {
+    "clip_id": "67757",
+    "label": "HELP",
+    "split": "train"
+  },
+  {
+    "clip_id": "27218",
+    "label": "HELP",
+    "split": "train"
+  },
+  {
+    "clip_id": "68406",
+    "label": "NO",
+    "split": "val"
+  },
+  {
+    "clip_id": "38542",
+    "label": "NO",
+    "split": "train"
+  },
+  {
+    "clip_id": "38531",
+    "label": "NO",
+    "split": "test"
+  },
+  {
+    "clip_id": "67934",
+    "label": "NO",
+    "split": "train"
+  },
+  {
+    "clip_id": "38536",
+    "label": "NO",
+    "split": "train"
+  },
+  {
+    "clip_id": "57952",
+    "label": "THIN",
+    "split": "train"
+  },
+  {
+    "clip_id": "67299",
+    "label": "THIN",
+    "split": "train"
+  },
+  {
+    "clip_id": "57944",
+    "label": "THIN",
+    "split": "test"
+  },
+  {
+    "clip_id": "57945",
+    "label": "THIN",
+    "split": "val"
+  },
+  {
+    "clip_id": "68852",
+    "label": "WALK",
+    "split": "val"
+  },
+  {
+    "clip_id": "68918",
+    "label": "WALK",
+    "split": "val"
+  },
+  {
+    "clip_id": "62174",
+    "label": "WALK",
+    "split": "train"
+  },
+  {
+    "clip_id": "62165",
+    "label": "WALK",
+    "split": "train"
+  },
+  {
+    "clip_id": "62166",
+    "label": "WALK",
+    "split": "test"
+  },
+  {
+    "clip_id": "67036",
+    "label": "WALK",
+    "split": "train"
+  },
+  {
+    "clip_id": "62172",
+    "label": "WALK",
+    "split": "train"
+  },
+  {
+    "clip_id": "68416",
+    "label": "YEAR",
+    "split": "val"
+  },
+  {
+    "clip_id": "68992",
+    "label": "YEAR",
+    "split": "train"
+  },
+  {
+    "clip_id": "64223",
+    "label": "YEAR",
+    "split": "train"
+  },
+  {
+    "clip_id": "64215",
+    "label": "YEAR",
+    "split": "train"
+  },
+  {
+    "clip_id": "64216",
+    "label": "YEAR",
+    "split": "val"
+  },
+  {
+    "clip_id": "67012",
+    "label": "YEAR",
+    "split": "train"
+  },
+  {
+    "clip_id": "64217",
+    "label": "YEAR",
+    "split": "train"
+  },
+  {
+    "clip_id": "64290",
+    "label": "YES",
+    "split": "train"
+  },
+  {
+    "clip_id": "64298",
+    "label": "YES",
+    "split": "val"
+  },
+  {
+    "clip_id": "64299",
+    "label": "YES",
+    "split": "train"
+  },
+  {
+    "clip_id": "64289",
+    "label": "YES",
+    "split": "train"
+  },
+  {
+    "clip_id": "68720",
+    "label": "ALL",
+    "split": "test"
+  },
+  {
+    "clip_id": "02002",
+    "label": "ALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "01989",
+    "label": "ALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "01990",
+    "label": "ALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "67356",
+    "label": "ALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "01998",
+    "label": "ALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "01999",
+    "label": "ALL",
+    "split": "val"
+  },
+  {
+    "clip_id": "68230",
+    "label": "BLACK",
+    "split": "val"
+  },
+  {
+    "clip_id": "06475",
+    "label": "BLACK",
+    "split": "train"
+  },
+  {
+    "clip_id": "67414",
+    "label": "BLACK",
+    "split": "train"
+  },
+  {
+    "clip_id": "06484",
+    "label": "BLACK",
+    "split": "train"
+  },
+  {
+    "clip_id": "06485",
+    "label": "BLACK",
+    "split": "train"
+  },
+  {
+    "clip_id": "13205",
+    "label": "COOL",
+    "split": "train"
+  },
+  {
+    "clip_id": "13206",
+    "label": "COOL",
+    "split": "train"
+  },
+  {
+    "clip_id": "13207",
+    "label": "COOL",
+    "split": "val"
+  },
+  {
+    "clip_id": "68674",
+    "label": "FINISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "68688",
+    "label": "FINISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "21946",
+    "label": "FINISH",
+    "split": "val"
+  },
+  {
+    "clip_id": "67663",
+    "label": "FINISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "21953",
+    "label": "FINISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "21956",
+    "label": "FINISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "28113",
+    "label": "HOT",
+    "split": "train"
+  },
+  {
+    "clip_id": "28114",
+    "label": "HOT",
+    "split": "train"
+  },
+  {
+    "clip_id": "28123",
+    "label": "HOT",
+    "split": "train"
+  },
+  {
+    "clip_id": "28124",
+    "label": "HOT",
+    "split": "train"
+  },
+  {
+    "clip_id": "33271",
+    "label": "LIKE",
+    "split": "val"
+  },
+  {
+    "clip_id": "33283",
+    "label": "LIKE",
+    "split": "train"
+  },
+  {
+    "clip_id": "33284",
+    "label": "LIKE",
+    "split": "train"
+  },
+  {
+    "clip_id": "34828",
+    "label": "MANY",
+    "split": "val"
+  },
+  {
+    "clip_id": "34829",
+    "label": "MANY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67873",
+    "label": "MANY",
+    "split": "train"
+  },
+  {
+    "clip_id": "34833",
+    "label": "MANY",
+    "split": "train"
+  },
+  {
+    "clip_id": "34837",
+    "label": "MANY",
+    "split": "train"
+  },
+  {
+    "clip_id": "34838",
+    "label": "MANY",
+    "split": "train"
+  },
+  {
+    "clip_id": "36945",
+    "label": "MOTHER",
+    "split": "val"
+  },
+  {
+    "clip_id": "36934",
+    "label": "MOTHER",
+    "split": "val"
+  },
+  {
+    "clip_id": "67908",
+    "label": "MOTHER",
+    "split": "test"
+  },
+  {
+    "clip_id": "68694",
+    "label": "NOW",
+    "split": "train"
+  },
+  {
+    "clip_id": "68770",
+    "label": "NOW",
+    "split": "train"
+  },
+  {
+    "clip_id": "67937",
+    "label": "NOW",
+    "split": "train"
+  },
+  {
+    "clip_id": "39005",
+    "label": "NOW",
+    "split": "test"
+  },
+  {
+    "clip_id": "38996",
+    "label": "NOW",
+    "split": "train"
+  },
+  {
+    "clip_id": "40120",
+    "label": "ORANGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67949",
+    "label": "ORANGE",
+    "split": "test"
+  },
+  {
+    "clip_id": "40124",
+    "label": "ORANGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "40128",
+    "label": "ORANGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "68972",
+    "label": "TABLE",
+    "split": "val"
+  },
+  {
+    "clip_id": "56573",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "56574",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "56576",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "56577",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "56578",
+    "label": "TABLE",
+    "split": "val"
+  },
+  {
+    "clip_id": "56560",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "56564",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67275",
+    "label": "TABLE",
+    "split": "test"
+  },
+  {
+    "clip_id": "56568",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "56569",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "56571",
+    "label": "TABLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "69092",
+    "label": "THANKSGIVING",
+    "split": "train"
+  },
+  {
+    "clip_id": "57646",
+    "label": "THANKSGIVING",
+    "split": "test"
+  },
+  {
+    "clip_id": "67292",
+    "label": "THANKSGIVING",
+    "split": "train"
+  },
+  {
+    "clip_id": "57636",
+    "label": "THANKSGIVING",
+    "split": "train"
+  },
+  {
+    "clip_id": "57637",
+    "label": "THANKSGIVING",
+    "split": "test"
+  },
+  {
+    "clip_id": "68330",
+    "label": "WHAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "62982",
+    "label": "WHAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "62971",
+    "label": "WHAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67057",
+    "label": "WHAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "62986",
+    "label": "WHAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "62973",
+    "label": "WHAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67058",
+    "label": "WHAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "68764",
+    "label": "WOMAN",
+    "split": "val"
+  },
+  {
+    "clip_id": "63670",
+    "label": "WOMAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "63671",
+    "label": "WOMAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "67078",
+    "label": "WOMAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "63678",
+    "label": "WOMAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "05643",
+    "label": "BED",
+    "split": "val"
+  },
+  {
+    "clip_id": "05635",
+    "label": "BED",
+    "split": "train"
+  },
+  {
+    "clip_id": "67400",
+    "label": "BED",
+    "split": "val"
+  },
+  {
+    "clip_id": "05642",
+    "label": "BED",
+    "split": "train"
+  },
+  {
+    "clip_id": "68274",
+    "label": "BLUE",
+    "split": "train"
+  },
+  {
+    "clip_id": "06836",
+    "label": "BLUE",
+    "split": "train"
+  },
+  {
+    "clip_id": "06837",
+    "label": "BLUE",
+    "split": "train"
+  },
+  {
+    "clip_id": "06838",
+    "label": "BLUE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67420",
+    "label": "BLUE",
+    "split": "val"
+  },
+  {
+    "clip_id": "06843",
+    "label": "BLUE",
+    "split": "val"
+  },
+  {
+    "clip_id": "06844",
+    "label": "BLUE",
+    "split": "train"
+  },
+  {
+    "clip_id": "07403",
+    "label": "BOWLING",
+    "split": "val"
+  },
+  {
+    "clip_id": "07395",
+    "label": "BOWLING",
+    "split": "train"
+  },
+  {
+    "clip_id": "07396",
+    "label": "BOWLING",
+    "split": "train"
+  },
+  {
+    "clip_id": "67431",
+    "label": "BOWLING",
+    "split": "train"
+  },
+  {
+    "clip_id": "08950",
+    "label": "CAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "08951",
+    "label": "CAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "08952",
+    "label": "CAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "08953",
+    "label": "CAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "08939",
+    "label": "CAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "67465",
+    "label": "CAN",
+    "split": "val"
+  },
+  {
+    "clip_id": "08945",
+    "label": "CAN",
+    "split": "val"
+  },
+  {
+    "clip_id": "08946",
+    "label": "CAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "08947",
+    "label": "CAN",
+    "split": "test"
+  },
+  {
+    "clip_id": "08949",
+    "label": "CAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "68632",
+    "label": "DOG",
+    "split": "train"
+  },
+  {
+    "clip_id": "17088",
+    "label": "DOG",
+    "split": "train"
+  },
+  {
+    "clip_id": "17092",
+    "label": "DOG",
+    "split": "train"
+  },
+  {
+    "clip_id": "67578",
+    "label": "DOG",
+    "split": "test"
+  },
+  {
+    "clip_id": "17096",
+    "label": "DOG",
+    "split": "val"
+  },
+  {
+    "clip_id": "69016",
+    "label": "FAMILY",
+    "split": "train"
+  },
+  {
+    "clip_id": "20984",
+    "label": "FAMILY",
+    "split": "train"
+  },
+  {
+    "clip_id": "20985",
+    "label": "FAMILY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67642",
+    "label": "FAMILY",
+    "split": "val"
+  },
+  {
+    "clip_id": "20991",
+    "label": "FAMILY",
+    "split": "test"
+  },
+  {
+    "clip_id": "22129",
+    "label": "FISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "22118",
+    "label": "FISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "22119",
+    "label": "FISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "67667",
+    "label": "FISH",
+    "split": "val"
+  },
+  {
+    "clip_id": "22124",
+    "label": "FISH",
+    "split": "train"
+  },
+  {
+    "clip_id": "68528",
+    "label": "GRADUATE",
+    "split": "train"
+  },
+  {
+    "clip_id": "25337",
+    "label": "GRADUATE",
+    "split": "train"
+  },
+  {
+    "clip_id": "25338",
+    "label": "GRADUATE",
+    "split": "train"
+  },
+  {
+    "clip_id": "25327",
+    "label": "GRADUATE",
+    "split": "train"
+  },
+  {
+    "clip_id": "25328",
+    "label": "GRADUATE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67722",
+    "label": "GRADUATE",
+    "split": "test"
+  },
+  {
+    "clip_id": "68396",
+    "label": "HAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "26736",
+    "label": "HAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "26716",
+    "label": "HAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67745",
+    "label": "HAT",
+    "split": "val"
+  },
+  {
+    "clip_id": "26722",
+    "label": "HAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "26726",
+    "label": "HAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "68350",
+    "label": "HEARING",
+    "split": "train"
+  },
+  {
+    "clip_id": "26977",
+    "label": "HEARING",
+    "split": "train"
+  },
+  {
+    "clip_id": "26978",
+    "label": "HEARING",
+    "split": "train"
+  },
+  {
+    "clip_id": "67750",
+    "label": "HEARING",
+    "split": "val"
+  },
+  {
+    "clip_id": "26981",
+    "label": "HEARING",
+    "split": "train"
+  },
+  {
+    "clip_id": "31766",
+    "label": "KISS",
+    "split": "train"
+  },
+  {
+    "clip_id": "31754",
+    "label": "KISS",
+    "split": "train"
+  },
+  {
+    "clip_id": "67817",
+    "label": "KISS",
+    "split": "train"
+  },
+  {
+    "clip_id": "31763",
+    "label": "KISS",
+    "split": "train"
+  },
+  {
+    "clip_id": "31764",
+    "label": "KISS",
+    "split": "train"
+  },
+  {
+    "clip_id": "68904",
+    "label": "LANGUAGE",
+    "split": "val"
+  },
+  {
+    "clip_id": "32161",
+    "label": "LANGUAGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "32162",
+    "label": "LANGUAGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67827",
+    "label": "LANGUAGE",
+    "split": "val"
+  },
+  {
+    "clip_id": "32165",
+    "label": "LANGUAGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "32166",
+    "label": "LANGUAGE",
+    "split": "test"
+  },
+  {
+    "clip_id": "32336",
+    "label": "LATER",
+    "split": "train"
+  },
+  {
+    "clip_id": "32327",
+    "label": "LATER",
+    "split": "train"
+  },
+  {
+    "clip_id": "32328",
+    "label": "LATER",
+    "split": "train"
+  },
+  {
+    "clip_id": "67829",
+    "label": "LATER",
+    "split": "test"
+  },
+  {
+    "clip_id": "32329",
+    "label": "LATER",
+    "split": "test"
+  },
+  {
+    "clip_id": "68794",
+    "label": "MAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "34739",
+    "label": "MAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "34741",
+    "label": "MAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "67872",
+    "label": "MAN",
+    "split": "val"
+  },
+  {
+    "clip_id": "34745",
+    "label": "MAN",
+    "split": "train"
+  },
+  {
+    "clip_id": "68928",
+    "label": "SHIRT",
+    "split": "train"
+  },
+  {
+    "clip_id": "51077",
+    "label": "SHIRT",
+    "split": "test"
+  },
+  {
+    "clip_id": "67188",
+    "label": "SHIRT",
+    "split": "train"
+  },
+  {
+    "clip_id": "51070",
+    "label": "SHIRT",
+    "split": "train"
+  },
+  {
+    "clip_id": "68428",
+    "label": "STUDY",
+    "split": "val"
+  },
+  {
+    "clip_id": "68624",
+    "label": "STUDY",
+    "split": "train"
+  },
+  {
+    "clip_id": "55367",
+    "label": "STUDY",
+    "split": "train"
+  },
+  {
+    "clip_id": "55374",
+    "label": "STUDY",
+    "split": "train"
+  },
+  {
+    "clip_id": "56851",
+    "label": "TALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "56845",
+    "label": "TALL",
+    "split": "val"
+  },
+  {
+    "clip_id": "67278",
+    "label": "TALL",
+    "split": "test"
+  },
+  {
+    "clip_id": "67279",
+    "label": "TALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "68622",
+    "label": "WHITE",
+    "split": "train"
+  },
+  {
+    "clip_id": "63206",
+    "label": "WHITE",
+    "split": "train"
+  },
+  {
+    "clip_id": "63209",
+    "label": "WHITE",
+    "split": "train"
+  },
+  {
+    "clip_id": "63213",
+    "label": "WHITE",
+    "split": "val"
+  },
+  {
+    "clip_id": "64089",
+    "label": "WRONG",
+    "split": "train"
+  },
+  {
+    "clip_id": "67009",
+    "label": "WRONG",
+    "split": "train"
+  },
+  {
+    "clip_id": "67010",
+    "label": "WRONG",
+    "split": "val"
+  },
+  {
+    "clip_id": "64094",
+    "label": "WRONG",
+    "split": "train"
+  },
+  {
+    "clip_id": "64096",
+    "label": "WRONG",
+    "split": "train"
+  },
+  {
+    "clip_id": "00630",
+    "label": "ACCIDENT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67342",
+    "label": "ACCIDENT",
+    "split": "val"
+  },
+  {
+    "clip_id": "00636",
+    "label": "ACCIDENT",
+    "split": "train"
+  },
+  {
+    "clip_id": "00638",
+    "label": "ACCIDENT",
+    "split": "train"
+  },
+  {
+    "clip_id": "68576",
+    "label": "APPLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "03004",
+    "label": "APPLE",
+    "split": "test"
+  },
+  {
+    "clip_id": "03007",
+    "label": "APPLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67367",
+    "label": "APPLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "06336",
+    "label": "BIRD",
+    "split": "train"
+  },
+  {
+    "clip_id": "06339",
+    "label": "BIRD",
+    "split": "train"
+  },
+  {
+    "clip_id": "67411",
+    "label": "BIRD",
+    "split": "train"
+  },
+  {
+    "clip_id": "06342",
+    "label": "BIRD",
+    "split": "train"
+  },
+  {
+    "clip_id": "09969",
+    "label": "CHANGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "65332",
+    "label": "CHANGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "09961",
+    "label": "CHANGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "09962",
+    "label": "CHANGE",
+    "split": "train"
+  },
+  {
+    "clip_id": "68202",
+    "label": "COLOR",
+    "split": "train"
+  },
+  {
+    "clip_id": "11771",
+    "label": "COLOR",
+    "split": "train"
+  },
+  {
+    "clip_id": "67514",
+    "label": "COLOR",
+    "split": "val"
+  },
+  {
+    "clip_id": "11779",
+    "label": "COLOR",
+    "split": "train"
+  },
+  {
+    "clip_id": "13330",
+    "label": "CORN",
+    "split": "train"
+  },
+  {
+    "clip_id": "13331",
+    "label": "CORN",
+    "split": "train"
+  },
+  {
+    "clip_id": "67531",
+    "label": "CORN",
+    "split": "train"
+  },
+  {
+    "clip_id": "67530",
+    "label": "CORN",
+    "split": "test"
+  },
+  {
+    "clip_id": "13335",
+    "label": "CORN",
+    "split": "val"
+  },
+  {
+    "clip_id": "13336",
+    "label": "CORN",
+    "split": "val"
+  },
+  {
+    "clip_id": "13700",
+    "label": "COW",
+    "split": "train"
+  },
+  {
+    "clip_id": "13701",
+    "label": "COW",
+    "split": "train"
+  },
+  {
+    "clip_id": "67536",
+    "label": "COW",
+    "split": "train"
+  },
+  {
+    "clip_id": "13706",
+    "label": "COW",
+    "split": "train"
+  },
+  {
+    "clip_id": "13709",
+    "label": "COW",
+    "split": "train"
+  },
+  {
+    "clip_id": "68988",
+    "label": "DANCE",
+    "split": "train"
+  },
+  {
+    "clip_id": "69048",
+    "label": "DANCE",
+    "split": "train"
+  },
+  {
+    "clip_id": "14626",
+    "label": "DANCE",
+    "split": "test"
+  },
+  {
+    "clip_id": "14629",
+    "label": "DANCE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67550",
+    "label": "DANCE",
+    "split": "val"
+  },
+  {
+    "clip_id": "14632",
+    "label": "DANCE",
+    "split": "val"
+  },
+  {
+    "clip_id": "14677",
+    "label": "DARK",
+    "split": "train"
+  },
+  {
+    "clip_id": "14678",
+    "label": "DARK",
+    "split": "train"
+  },
+  {
+    "clip_id": "14679",
+    "label": "DARK",
+    "split": "train"
+  },
+  {
+    "clip_id": "14683",
+    "label": "DARK",
+    "split": "val"
+  },
+  {
+    "clip_id": "14684",
+    "label": "DARK",
+    "split": "train"
+  },
+  {
+    "clip_id": "68842",
+    "label": "DOCTOR",
+    "split": "train"
+  },
+  {
+    "clip_id": "17018",
+    "label": "DOCTOR",
+    "split": "train"
+  },
+  {
+    "clip_id": "67579",
+    "label": "DOCTOR",
+    "split": "test"
+  },
+  {
+    "clip_id": "17024",
+    "label": "DOCTOR",
+    "split": "test"
+  },
+  {
+    "clip_id": "17025",
+    "label": "DOCTOR",
+    "split": "train"
+  },
+  {
+    "clip_id": "68520",
+    "label": "EAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "69086",
+    "label": "EAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "18326",
+    "label": "EAT",
+    "split": "test"
+  },
+  {
+    "clip_id": "18328",
+    "label": "EAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67610",
+    "label": "EAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67611",
+    "label": "EAT",
+    "split": "val"
+  },
+  {
+    "clip_id": "18333",
+    "label": "EAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "18334",
+    "label": "EAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "68344",
+    "label": "ENJOY",
+    "split": "val"
+  },
+  {
+    "clip_id": "19262",
+    "label": "ENJOY",
+    "split": "test"
+  },
+  {
+    "clip_id": "19263",
+    "label": "ENJOY",
+    "split": "train"
+  },
+  {
+    "clip_id": "19265",
+    "label": "ENJOY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67624",
+    "label": "ENJOY",
+    "split": "train"
+  },
+  {
+    "clip_id": "19268",
+    "label": "ENJOY",
+    "split": "train"
+  },
+  {
+    "clip_id": "68692",
+    "label": "FORGET",
+    "split": "train"
+  },
+  {
+    "clip_id": "22956",
+    "label": "FORGET",
+    "split": "train"
+  },
+  {
+    "clip_id": "22959",
+    "label": "FORGET",
+    "split": "train"
+  },
+  {
+    "clip_id": "22966",
+    "label": "FORGET",
+    "split": "train"
+  },
+  {
+    "clip_id": "24656",
+    "label": "GIVE",
+    "split": "train"
+  },
+  {
+    "clip_id": "24659",
+    "label": "GIVE",
+    "split": "train"
+  },
+  {
+    "clip_id": "24642",
+    "label": "GIVE",
+    "split": "val"
+  },
+  {
+    "clip_id": "24643",
+    "label": "GIVE",
+    "split": "train"
+  },
+  {
+    "clip_id": "24645",
+    "label": "GIVE",
+    "split": "train"
+  },
+  {
+    "clip_id": "69068",
+    "label": "LAST",
+    "split": "train"
+  },
+  {
+    "clip_id": "32251",
+    "label": "LAST",
+    "split": "train"
+  },
+  {
+    "clip_id": "32252",
+    "label": "LAST",
+    "split": "train"
+  },
+  {
+    "clip_id": "67826",
+    "label": "LAST",
+    "split": "val"
+  },
+  {
+    "clip_id": "32259",
+    "label": "LAST",
+    "split": "train"
+  },
+  {
+    "clip_id": "68974",
+    "label": "MEET",
+    "split": "train"
+  },
+  {
+    "clip_id": "35514",
+    "label": "MEET",
+    "split": "train"
+  },
+  {
+    "clip_id": "35515",
+    "label": "MEET",
+    "split": "train"
+  },
+  {
+    "clip_id": "67886",
+    "label": "MEET",
+    "split": "val"
+  },
+  {
+    "clip_id": "35522",
+    "label": "MEET",
+    "split": "train"
+  },
+  {
+    "clip_id": "68398",
+    "label": "PINK",
+    "split": "val"
+  },
+  {
+    "clip_id": "42835",
+    "label": "PINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "67990",
+    "label": "PINK",
+    "split": "train"
+  },
+  {
+    "clip_id": "42841",
+    "label": "PINK",
+    "split": "val"
+  },
+  {
+    "clip_id": "42842",
+    "label": "PINK",
+    "split": "test"
+  },
+  {
+    "clip_id": "42976",
+    "label": "PIZZA",
+    "split": "val"
+  },
+  {
+    "clip_id": "42963",
+    "label": "PIZZA",
+    "split": "train"
+  },
+  {
+    "clip_id": "42964",
+    "label": "PIZZA",
+    "split": "train"
+  },
+  {
+    "clip_id": "68288",
+    "label": "PLAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "43172",
+    "label": "PLAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67081",
+    "label": "PLAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "43176",
+    "label": "PLAY",
+    "split": "val"
+  },
+  {
+    "clip_id": "43177",
+    "label": "PLAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "43178",
+    "label": "PLAY",
+    "split": "val"
+  },
+  {
+    "clip_id": "68218",
+    "label": "SCHOOL",
+    "split": "train"
+  },
+  {
+    "clip_id": "68510",
+    "label": "SCHOOL",
+    "split": "train"
+  },
+  {
+    "clip_id": "49601",
+    "label": "SCHOOL",
+    "split": "train"
+  },
+  {
+    "clip_id": "49604",
+    "label": "SCHOOL",
+    "split": "train"
+  },
+  {
+    "clip_id": "67170",
+    "label": "SCHOOL",
+    "split": "val"
+  },
+  {
+    "clip_id": "49605",
+    "label": "SCHOOL",
+    "split": "train"
+  },
+  {
+    "clip_id": "50042",
+    "label": "SECRETARY",
+    "split": "train"
+  },
+  {
+    "clip_id": "50043",
+    "label": "SECRETARY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67177",
+    "label": "SECRETARY",
+    "split": "test"
+  },
+  {
+    "clip_id": "50051",
+    "label": "SECRETARY",
+    "split": "val"
+  },
+  {
+    "clip_id": "51228",
+    "label": "SHORT",
+    "split": "train"
+  },
+  {
+    "clip_id": "51229",
+    "label": "SHORT",
+    "split": "train"
+  },
+  {
+    "clip_id": "51230",
+    "label": "SHORT",
+    "split": "val"
+  },
+  {
+    "clip_id": "51234",
+    "label": "SHORT",
+    "split": "test"
+  },
+  {
+    "clip_id": "68294",
+    "label": "TIME",
+    "split": "train"
+  },
+  {
+    "clip_id": "58505",
+    "label": "TIME",
+    "split": "train"
+  },
+  {
+    "clip_id": "58506",
+    "label": "TIME",
+    "split": "train"
+  },
+  {
+    "clip_id": "67309",
+    "label": "TIME",
+    "split": "train"
+  },
+  {
+    "clip_id": "58507",
+    "label": "TIME",
+    "split": "val"
+  },
+  {
+    "clip_id": "58500",
+    "label": "TIME",
+    "split": "train"
+  },
+  {
+    "clip_id": "58501",
+    "label": "TIME",
+    "split": "train"
+  },
+  {
+    "clip_id": "68540",
+    "label": "WANT",
+    "split": "train"
+  },
+  {
+    "clip_id": "62249",
+    "label": "WANT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67038",
+    "label": "WANT",
+    "split": "train"
+  },
+  {
+    "clip_id": "62256",
+    "label": "WANT",
+    "split": "train"
+  },
+  {
+    "clip_id": "62257",
+    "label": "WANT",
+    "split": "train"
+  },
+  {
+    "clip_id": "62258",
+    "label": "WANT",
+    "split": "train"
+  },
+  {
+    "clip_id": "68924",
+    "label": "WORK",
+    "split": "val"
+  },
+  {
+    "clip_id": "63804",
+    "label": "WORK",
+    "split": "train"
+  },
+  {
+    "clip_id": "63805",
+    "label": "WORK",
+    "split": "train"
+  },
+  {
+    "clip_id": "63794",
+    "label": "WORK",
+    "split": "train"
+  },
+  {
+    "clip_id": "67003",
+    "label": "WORK",
+    "split": "train"
+  },
+  {
+    "clip_id": "63802",
+    "label": "WORK",
+    "split": "train"
+  },
+  {
+    "clip_id": "01390",
+    "label": "AFRICA",
+    "split": "train"
+  },
+  {
+    "clip_id": "67350",
+    "label": "AFRICA",
+    "split": "train"
+  },
+  {
+    "clip_id": "01396",
+    "label": "AFRICA",
+    "split": "train"
+  },
+  {
+    "clip_id": "01397",
+    "label": "AFRICA",
+    "split": "test"
+  },
+  {
+    "clip_id": "68612",
+    "label": "BASKETBALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "05236",
+    "label": "BASKETBALL",
+    "split": "val"
+  },
+  {
+    "clip_id": "05237",
+    "label": "BASKETBALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "67392",
+    "label": "BASKETBALL",
+    "split": "train"
+  },
+  {
+    "clip_id": "68338",
+    "label": "BIRTHDAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67413",
+    "label": "BIRTHDAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "06370",
+    "label": "BIRTHDAY",
+    "split": "test"
+  },
+  {
+    "clip_id": "06361",
+    "label": "BIRTHDAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "06362",
+    "label": "BIRTHDAY",
+    "split": "val"
+  },
+  {
+    "clip_id": "69028",
+    "label": "BROWN",
+    "split": "train"
+  },
+  {
+    "clip_id": "07964",
+    "label": "BROWN",
+    "split": "val"
+  },
+  {
+    "clip_id": "07969",
+    "label": "BROWN",
+    "split": "train"
+  },
+  {
+    "clip_id": "67446",
+    "label": "BROWN",
+    "split": "train"
+  },
+  {
+    "clip_id": "07972",
+    "label": "BROWN",
+    "split": "train"
+  },
+  {
+    "clip_id": "68368",
+    "label": "BUT",
+    "split": "train"
+  },
+  {
+    "clip_id": "08427",
+    "label": "BUT",
+    "split": "train"
+  },
+  {
+    "clip_id": "08428",
+    "label": "BUT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67451",
+    "label": "BUT",
+    "split": "train"
+  },
+  {
+    "clip_id": "08436",
+    "label": "BUT",
+    "split": "test"
+  },
+  {
+    "clip_id": "10162",
+    "label": "CHEAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "10164",
+    "label": "CHEAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67489",
+    "label": "CHEAT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67490",
+    "label": "CHEAT",
+    "split": "val"
+  },
+  {
+    "clip_id": "10156",
+    "label": "CHEAT",
+    "split": "test"
+  },
+  {
+    "clip_id": "68374",
+    "label": "CITY",
+    "split": "train"
+  },
+  {
+    "clip_id": "10896",
+    "label": "CITY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67501",
+    "label": "CITY",
+    "split": "train"
+  },
+  {
+    "clip_id": "10903",
+    "label": "CITY",
+    "split": "train"
+  },
+  {
+    "clip_id": "69004",
+    "label": "COOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "13159",
+    "label": "COOK",
+    "split": "val"
+  },
+  {
+    "clip_id": "67527",
+    "label": "COOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "13166",
+    "label": "COOK",
+    "split": "train"
+  },
+  {
+    "clip_id": "15036",
+    "label": "DECIDE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67555",
+    "label": "DECIDE",
+    "split": "train"
+  },
+  {
+    "clip_id": "67556",
+    "label": "DECIDE",
+    "split": "train"
+  },
+  {
+    "clip_id": "15042",
+    "label": "DECIDE",
+    "split": "train"
+  },
+  {
+    "clip_id": "23772",
+    "label": "FULL",
+    "split": "train"
+  },
+  {
+    "clip_id": "23773",
+    "label": "FULL",
+    "split": "train"
+  },
+  {
+    "clip_id": "67697",
+    "label": "FULL",
+    "split": "train"
+  },
+  {
+    "clip_id": "23780",
+    "label": "FULL",
+    "split": "train"
+  },
+  {
+    "clip_id": "68954",
+    "label": "HOW",
+    "split": "val"
+  },
+  {
+    "clip_id": "28206",
+    "label": "HOW",
+    "split": "val"
+  },
+  {
+    "clip_id": "28207",
+    "label": "HOW",
+    "split": "train"
+  },
+  {
+    "clip_id": "28208",
+    "label": "HOW",
+    "split": "train"
+  },
+  {
+    "clip_id": "67776",
+    "label": "HOW",
+    "split": "train"
+  },
+  {
+    "clip_id": "28213",
+    "label": "HOW",
+    "split": "train"
+  },
+  {
+    "clip_id": "68320",
+    "label": "JACKET",
+    "split": "test"
+  },
+  {
+    "clip_id": "30847",
+    "label": "JACKET",
+    "split": "train"
+  },
+  {
+    "clip_id": "30848",
+    "label": "JACKET",
+    "split": "train"
+  },
+  {
+    "clip_id": "30837",
+    "label": "JACKET",
+    "split": "train"
+  },
+  {
+    "clip_id": "30838",
+    "label": "JACKET",
+    "split": "train"
+  },
+  {
+    "clip_id": "67802",
+    "label": "JACKET",
+    "split": "train"
+  },
+  {
+    "clip_id": "30841",
+    "label": "JACKET",
+    "split": "val"
+  },
+  {
+    "clip_id": "30842",
+    "label": "JACKET",
+    "split": "train"
+  },
+  {
+    "clip_id": "68636",
+    "label": "LETTER",
+    "split": "test"
+  },
+  {
+    "clip_id": "32951",
+    "label": "LETTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "67840",
+    "label": "LETTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "32957",
+    "label": "LETTER",
+    "split": "train"
+  },
+  {
+    "clip_id": "68810",
+    "label": "MEDICINE",
+    "split": "test"
+  },
+  {
+    "clip_id": "35457",
+    "label": "MEDICINE",
+    "split": "val"
+  },
+  {
+    "clip_id": "67890",
+    "label": "MEDICINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "35462",
+    "label": "MEDICINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "35463",
+    "label": "MEDICINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "35464",
+    "label": "MEDICINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "35465",
+    "label": "MEDICINE",
+    "split": "train"
+  },
+  {
+    "clip_id": "35466",
+    "label": "MEDICINE",
+    "split": "val"
+  },
+  {
+    "clip_id": "68544",
+    "label": "NEED",
+    "split": "train"
+  },
+  {
+    "clip_id": "37885",
+    "label": "NEED",
+    "split": "train"
+  },
+  {
+    "clip_id": "67925",
+    "label": "NEED",
+    "split": "train"
+  },
+  {
+    "clip_id": "37892",
+    "label": "NEED",
+    "split": "train"
+  },
+  {
+    "clip_id": "37893",
+    "label": "NEED",
+    "split": "train"
+  },
+  {
+    "clip_id": "68364",
+    "label": "PAINT",
+    "split": "test"
+  },
+  {
+    "clip_id": "40838",
+    "label": "PAINT",
+    "split": "train"
+  },
+  {
+    "clip_id": "40839",
+    "label": "PAINT",
+    "split": "train"
+  },
+  {
+    "clip_id": "67958",
+    "label": "PAINT",
+    "split": "train"
+  },
+  {
+    "clip_id": "40844",
+    "label": "PAINT",
+    "split": "train"
+  },
+  {
+    "clip_id": "40846",
+    "label": "PAINT",
+    "split": "train"
+  },
+  {
+    "clip_id": "68446",
+    "label": "PAPER",
+    "split": "test"
+  },
+  {
+    "clip_id": "41031",
+    "label": "PAPER",
+    "split": "val"
+  },
+  {
+    "clip_id": "67961",
+    "label": "PAPER",
+    "split": "train"
+  },
+  {
+    "clip_id": "41036",
+    "label": "PAPER",
+    "split": "train"
+  },
+  {
+    "clip_id": "45266",
+    "label": "PULL",
+    "split": "train"
+  },
+  {
+    "clip_id": "45270",
+    "label": "PULL",
+    "split": "val"
+  },
+  {
+    "clip_id": "67111",
+    "label": "PULL",
+    "split": "train"
+  },
+  {
+    "clip_id": "45272",
+    "label": "PULL",
+    "split": "train"
+  },
+  {
+    "clip_id": "68726",
+    "label": "PURPLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "45441",
+    "label": "PURPLE",
+    "split": "val"
+  },
+  {
+    "clip_id": "67114",
+    "label": "PURPLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "45442",
+    "label": "PURPLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "45437",
+    "label": "PURPLE",
+    "split": "train"
+  },
+  {
+    "clip_id": "48122",
+    "label": "RIGHT",
+    "split": "train"
+  },
+  {
+    "clip_id": "48123",
+    "label": "RIGHT",
+    "split": "val"
+  },
+  {
+    "clip_id": "67143",
+    "label": "RIGHT",
+    "split": "train"
+  },
+  {
+    "clip_id": "48111",
+    "label": "RIGHT",
+    "split": "train"
+  },
+  {
+    "clip_id": "48112",
+    "label": "RIGHT",
+    "split": "val"
+  },
+  {
+    "clip_id": "67142",
+    "label": "RIGHT",
+    "split": "train"
+  },
+  {
+    "clip_id": "68856",
+    "label": "SAME",
+    "split": "train"
+  },
+  {
+    "clip_id": "49179",
+    "label": "SAME",
+    "split": "test"
+  },
+  {
+    "clip_id": "49180",
+    "label": "SAME",
+    "split": "test"
+  },
+  {
+    "clip_id": "67159",
+    "label": "SAME",
+    "split": "train"
+  },
+  {
+    "clip_id": "67161",
+    "label": "SAME",
+    "split": "train"
+  },
+  {
+    "clip_id": "49187",
+    "label": "SAME",
+    "split": "val"
+  },
+  {
+    "clip_id": "68336",
+    "label": "SON",
+    "split": "test"
+  },
+  {
+    "clip_id": "53272",
+    "label": "SON",
+    "split": "train"
+  },
+  {
+    "clip_id": "53276",
+    "label": "SON",
+    "split": "train"
+  },
+  {
+    "clip_id": "67227",
+    "label": "SON",
+    "split": "train"
+  },
+  {
+    "clip_id": "53278",
+    "label": "SON",
+    "split": "train"
+  },
+  {
+    "clip_id": "57279",
+    "label": "TELL",
+    "split": "train"
+  },
+  {
+    "clip_id": "57280",
+    "label": "TELL",
+    "split": "train"
+  },
+  {
+    "clip_id": "57281",
+    "label": "TELL",
+    "split": "train"
+  },
+  {
+    "clip_id": "67287",
+    "label": "TELL",
+    "split": "train"
+  },
+  {
+    "clip_id": "57290",
+    "label": "TELL",
+    "split": "val"
+  },
+  {
+    "clip_id": "58364",
+    "label": "THURSDAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "67306",
+    "label": "THURSDAY",
+    "split": "train"
+  },
+  {
+    "clip_id": "58369",
+    "label": "THURSDAY",
+    "split": "train"
+  }
+]

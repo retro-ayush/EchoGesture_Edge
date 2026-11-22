@@ -1,0 +1,122 @@
+{
+  "split": "val",
+  "models": [
+    {
+      "model": "models/echogesture.int8.onnx",
+      "size_mb": 0.983254,
+      "clips": 242,
+      "classes_present": 100,
+      "top1_percent": 78.51239669421489,
+      "top5_percent": 92.14876033057851,
+      "macro_top1_percent": 79.65,
+      "classifier_latency_ms": {
+        "n": 241,
+        "mean": 3.7291128846770345,
+        "p50": 3.668958001071587,
+        "p95": 4.5932909997645766,
+        "p99": 5.297550198156386
+      },
+      "note": "First call excluded from latency (warm-up)."
+    },
+    {
+      "model": "models/echogesture.int8.fp32.onnx",
+      "size_mb": 2.700886,
+      "clips": 242,
+      "classes_present": 100,
+      "top1_percent": 78.51239669421489,
+      "top5_percent": 92.56198347107438,
+      "macro_top1_percent": 79.51666666666665,
+      "classifier_latency_ms": {
+        "n": 241,
+        "mean": 5.825335430406436,
+        "p50": 5.48591700498946,
+        "p95": 7.736333995126188,
+        "p99": 9.462241001892835
+      },
+      "note": "First call excluded from latency (warm-up)."
+    }
+  ],
+  "calibration": {
+    "split": "val",
+    "clips": 242,
+    "temperature": 0.7923507420918469,
+    "nll_before": 1.122767468576556,
+    "nll_after": 1.0696943017827532,
+    "target_precision": 0.9,
+    "threshold_found": true,
+    "threshold_table": [
+      {
+        "threshold": 0.3,
+        "coverage": 0.9132231404958677,
+        "accepted_accuracy": 0.8190045248868778
+      },
+      {
+        "threshold": 0.35,
+        "coverage": 0.8677685950413223,
+        "accepted_accuracy": 0.8333333333333334
+      },
+      {
+        "threshold": 0.4,
+        "coverage": 0.8429752066115702,
+        "accepted_accuracy": 0.8431372549019608
+      },
+      {
+        "threshold": 0.45,
+        "coverage": 0.7892561983471075,
+        "accepted_accuracy": 0.8743455497382199
+      },
+      {
+        "threshold": 0.5,
+        "coverage": 0.756198347107438,
+        "accepted_accuracy": 0.8852459016393442
+      },
+      {
+        "threshold": 0.55,
+        "coverage": 0.7148760330578512,
+        "accepted_accuracy": 0.9017341040462428
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.6818181818181818,
+        "accepted_accuracy": 0.9090909090909091
+      },
+      {
+        "threshold": 0.65,
+        "coverage": 0.6363636363636364,
+        "accepted_accuracy": 0.922077922077922
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.6157024793388429,
+        "accepted_accuracy": 0.9261744966442953
+      },
+      {
+        "threshold": 0.75,
+        "coverage": 0.5867768595041323,
+        "accepted_accuracy": 0.9295774647887324
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.5165289256198347,
+        "accepted_accuracy": 0.928
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.47107438016528924,
+        "accepted_accuracy": 0.9385964912280702
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.371900826446281,
+        "accepted_accuracy": 0.9555555555555556
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.2768595041322314,
+        "accepted_accuracy": 0.9701492537313433
+      }
+    ],
+    "confidence_threshold": 0.55,
+    "written_to": "models/echogesture.int8.json"
+  }
+}

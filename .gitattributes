@@ -1,0 +1,7 @@
+# Keep scripts runnable after cloning on any OS.
+* text=auto
+*.sh text eol=lf
+*.bat text eol=crlf
+*.onnx binary
+*.task binary
+*.pdf binary

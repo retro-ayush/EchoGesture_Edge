@@ -1,0 +1,4 @@
+clip_id,path,label,split,signer_id
+example_train,clips/example_train.mp4,REPLACE_WITH_OFFICIAL_GLOSS,train,signer_train
+example_val,clips/example_val.mp4,REPLACE_WITH_OFFICIAL_GLOSS,val,signer_val
+example_test,clips/example_test.mp4,REPLACE_WITH_OFFICIAL_GLOSS,test,signer_test

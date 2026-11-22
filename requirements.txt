@@ -1,0 +1,9 @@
+# Runtime: predict(), evaluation, validation, benchmarks and the camera demo.
+# No PyTorch needed. Supported: Python 3.10-3.12 (3.11 recommended and tested)
+# on macOS (Apple Silicon/Intel), Windows x64 and Linux x86_64.
+# Python 3.13+ is NOT supported by these pins (no mediapipe/onnxruntime wheels).
+# Use setup.sh / setup.bat, which also apply constraints.txt for exact versions.
+numpy==1.26.4
+opencv-contrib-python==4.10.0.84
+mediapipe==0.10.21
+onnxruntime==1.19.2

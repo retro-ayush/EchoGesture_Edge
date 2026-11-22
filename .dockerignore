@@ -1,0 +1,9 @@
+.venv
+data
+outputs
+logs
+models/*.pt
+models/*.prepared.onnx
+**/__pycache__
+._*
+.git

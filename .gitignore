@@ -1,0 +1,29 @@
+# Environments
+.venv/
+__pycache__/
+*.pyc
+
+# Dataset videos, caches and corrupted copies: never publish (WLASL data-use agreement)
+data/*
+!data/manifest.example.csv
+!data/vocab.json
+!data/videos.missing.json
+
+# Training intermediates. Final *.int8.onnx/*.json weights and the MediaPipe
+# .task assets are NOT ignored: the submission must bundle them.
+models/*.pt
+models/*.history.json
+models/*.prepared.onnx
+models/*.partial
+
+outputs/*
+!outputs/predictions.jsonl
+!outputs/results.csv
+!outputs/summary.json
+!outputs/validation.json
+!outputs/sustained_benchmark.json
+logs/
+.DS_Store
+
+# macOS metadata files on exFAT drives
+._*
