@@ -39,6 +39,10 @@ Validation split (242 clips, used for all model selection and calibration): **78
 
 **Data actually used.** WLASL100 (official v0.3 splits, 100 glosses in official order in `data/vocab.json`). Of 2,038 annotated instances, 1,459 could be obtained (1,013 from the Kaggle `wlasl-processed` mirror + 446 recovered from still-live YouTube sources and trimmed to the official frame ranges); 579 sources are dead and listed in `data/videos.missing.json`. Splits: 1,017 train / 242 val / 200 test, with 98 of 100 classes present in test. WLASL splits are not signer-independent; the split audit is stored in the model JSON. No organizer-specific vocabulary or test manifest was available: if one is published, retrain on it.
 
+## Android app (APK)
+
+A native Android app (`android/`) runs the whole pipeline on the phone: camera, MediaPipe landmarks, the same features and the same INT8 classifier. It works on any ARM phone with Android 7.0+. Build it with `cd android && ./build_apk.sh` (writes `dist/EchoGesture-Edge.apk`, 42 MB), then copy the APK to the phone and open it. Install, usage and tests are in [android/README.md](android/README.md). On-device checks: the Kotlin features match Python (unit test), and 12 test clips give the same predictions as Python ONNX Runtime on an arm64 Android 14 emulator.
+
 ## Quick setup (any machine)
 
 One command creates `.venv`, installs pinned dependencies, checks the bundled model and runs a `predict()` smoke test:

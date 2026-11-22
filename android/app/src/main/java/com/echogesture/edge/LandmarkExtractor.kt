@@ -34,11 +34,19 @@ class LandmarkExtractor(context: Context, preferGpu: Boolean = true) : AutoClose
         for (d in if (preferGpu) listOf(Delegate.GPU, Delegate.CPU) else listOf(Delegate.CPU)) {
             try {
                 build(context, d)
+                // Some GPUs/drivers create the delegate but fail on the first inference
+                // (e.g. unsupported GL calls), so warm up on a blank frame before accepting it.
+                val blank = Bitmap.createBitmap(64, 64, Bitmap.Config.ARGB_8888)
+                val image = BitmapImageBuilder(blank).build()
+                pose.detectForVideo(image, 0)
+                hand.detectForVideo(image, 0)
+                lastTimestamp = 0
                 delegate = if (d == Delegate.GPU) "gpu" else "cpu"
                 error = null
                 break
             } catch (e: Exception) {
                 Log.w(TAG, "MediaPipe $d delegate unavailable", e)
+                close()
                 error = e
             }
         }
@@ -116,8 +124,9 @@ class LandmarkExtractor(context: Context, preferGpu: Boolean = true) : AutoClose
     }
 
     override fun close() {
-        if (::hand.isInitialized) hand.close()
-        if (::pose.isInitialized) pose.close()
+        // A graph that failed (e.g. a broken GPU delegate) rethrows its error on close: ignore it.
+        if (::hand.isInitialized) runCatching { hand.close() }
+        if (::pose.isInitialized) runCatching { pose.close() }
     }
 
     companion object { private const val TAG = "EchoGesture" }
