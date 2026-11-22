@@ -20,8 +20,8 @@ Measured 22 November 2026 on an Apple M3 Mac (Mac15,12, macOS). MediaPipe hand/p
 | Classifier latency p95 (once per sign) | report | 3.4 ms | — |
 | Full-clip `predict()` p95 (whole video, incl. tracker setup) | report | 2.0 s (p50 1.2 s) | — |
 | Robustness: angle / low light / occlusion (synthetic, paired) | ≤ 5 pt drop | −1.0 / −12.0 / −16.0 pt | ❌ (worst case) |
-| Thermal drift, 10 min sustained | ≤ 20 % | THERMAL_V2 | THERMAL_V2_PASS |
-| Average power (CPU+GPU+ANE, full pipeline under load) | ≤ 500 mW | POWER_V2 | POWER_V2_PASS |
+| Thermal drift, 10 min sustained (back-to-back clips) | ≤ 20 % | **−2.7 %** (early p95 2.33 s → late 2.27 s, 428 runs) | ✅ |
+| Average power at camera frame rate (CPU+GPU+ANE) | ≤ 500 mW | 941 mW (CPU 662 + GPU 279); 1,716 mW at max load | ❌ |
 
 Validation split (242 clips, used for all model selection and calibration): **78.9 % top-1** INT8 (FP32 79.3 %). Confidence calibration: temperature 0.80; HUD threshold 0.50 gives ≥ 90 % precision on accepted captions.
 
@@ -33,7 +33,7 @@ Validation split (242 clips, used for all model selection and calibration): **78
 | Train on clean + synthetic low-light and occluded copies of the *training* clips (3,051 rows; corruption seed differs from the test copies) | low light 58.7 → **68.2 %**, occlusion 52.5 → **64.9 %**, clean 78.5 → 78.9 % |
 | Result on test | clean 74.0 → 74.5 %, low light 53.0 → 62.5 %, occlusion 53.5 → 58.5 % |
 
-**Honest reading.** Accuracy, size, per-frame latency and thermal drift pass. Whole-clip latency includes decoding and tracking every frame of a multi-second video plus ~0.5 s GPU tracker setup, so it is reported separately and never relabelled; in streaming use a caption arrives one classifier call (~3 ms) after the sign ends. Robustness improved by 5-9 points but still misses ≤ 5 pt for heavy synthetic darkness and a 25 % black box over the signing area, which hide the hands from MediaPipe; the test corruptions use the same generator as the training copies (different seed and clips), so real-world gains may be smaller. A tested exposure-correction front end made low light *worse* on validation (58.7 % → 49.6 %), so it ships disabled (`ECHOGESTURE_ENHANCE=1` to experiment). The first model (clean-only training, CPU tracking: 74.0 % test, 57.6 ms/frame, 2.2 W) is in git history.
+**Honest reading.** Accuracy, size, per-frame latency and thermal drift pass. Power fell from 2.2 W (CPU tracking) to 0.94 W at camera pace but is still above 0.5 W on a laptop; most remaining draw is CPU-side video decode, Python and per-clip tracker setup, which a native phone app with one persistent tracker would avoid. Whole-clip latency includes decoding and tracking every frame of a multi-second video plus ~0.5 s GPU tracker setup, so it is reported separately and never relabelled; in streaming use a caption arrives one classifier call (~3 ms) after the sign ends. Robustness improved by 5-9 points but still misses ≤ 5 pt for heavy synthetic darkness and a 25 % black box over the signing area, which hide the hands from MediaPipe; the test corruptions use the same generator as the training copies (different seed and clips), so real-world gains may be smaller. A tested exposure-correction front end made low light *worse* on validation (58.7 % → 49.6 %), so it ships disabled (`ECHOGESTURE_ENHANCE=1` to experiment). The first model (clean-only training, CPU tracking: 74.0 % test, 57.6 ms/frame, 2.2 W) is in git history.
 
 **Ablations** (validation top-1, same seed and recipe, width 192): full 78.1 %, no presence masks 76.0 % (−2.1), no motion channels 77.3 % (−0.8). Single seed on 242 clips (1 clip ≈ 0.4 pt): small effects, near noise.
 
@@ -234,8 +234,8 @@ Use `--device cuda` or `cpu` instead of `mps` off Apple Silicon. MediaPipe uses 
 
 ## Next steps
 
-1. **Latency and power**: run MediaPipe with a phone GPU/NPU delegate to bring per-frame tracking under 50 ms and power toward 0.5 W; tracking at a lower frame rate (e.g. every 2nd frame) is the cheapest lever. To re-measure power: `sudo powermetrics --samplers cpu_power,gpu_power -i 1000 -n 540 > ~/power.txt` during `scripts/sustained_benchmark.py`, then `python scripts/update_results.py --powermetrics-log ~/power.txt`.
-2. **Robustness**: train with real low-light and partially occluded recordings.
+1. **Power**: a native app with one persistent tracker (no per-clip setup), hardware video decode, and tracking at 15 fps would cut most of the remaining 0.94 W. Re-measure with `sudo powermetrics --samplers cpu_power,gpu_power -i 1000 -n 300 > ~/power.txt` during `scripts/sustained_benchmark.py --realtime`, then `python scripts/update_results.py --powermetrics-log ~/power.txt`.
+2. **Robustness**: replace the synthetic training corruptions with real low-light and partially occluded recordings.
 3. **Other vocabularies**: rebuild `data/vocab.json`, retrain with the commands in **How this model was built**, and re-evaluate. WLASL100 results do not transfer to a different vocabulary.
 
 ## Training guide

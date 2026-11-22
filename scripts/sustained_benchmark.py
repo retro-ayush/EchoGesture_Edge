@@ -7,6 +7,11 @@ the screen/charging state recorded; pass the JSON to evaluate --thermal-json.
   full:       predict-style video processing (decode + MediaPipe + classifier)
   classifier: cached features through the ONNX classifier only
 
+--realtime (full mode) paces clips at their native frame rate, like a live
+camera: after processing a clip the run idles until the clip's real duration
+has elapsed. Use it to measure conversational power draw; without it the run
+is throughput-bound (back-to-back clips), which measures maximum load.
+
 Examples:
   python scripts/sustained_benchmark.py data/videos.csv --mode full --minutes 10
   python scripts/sustained_benchmark.py data/features/manifest.csv --mode classifier
@@ -36,6 +41,7 @@ def main():
     p.add_argument("--models", default="models")
     p.add_argument("--device", required=True, help="Actual hardware name")
     p.add_argument("--out", default="outputs/sustained_benchmark.json")
+    p.add_argument("--realtime", action="store_true", help="Pace clips at native frame rate (full mode)")
     a = p.parse_args()
     rows = [r for r in read_manifest(a.manifest) if r["split"] == a.split][:a.clips]
     if not rows:
@@ -49,15 +55,31 @@ def main():
         work = lambda i: predictor.classify(cached[i % len(cached)])  # noqa: E731
     else:
         work = lambda i: predictor.video(rows[i % len(rows)]["path"], a.models)  # noqa: E731
+    durations = []
+    if a.realtime:
+        if a.mode != "full":
+            p.error("--realtime applies to --mode full")
+        import cv2
+        for r in rows:
+            cap = cv2.VideoCapture(r["path"])
+            fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
+            durations.append(cap.get(cv2.CAP_PROP_FRAME_COUNT) / fps)
+            cap.release()
     work(0)  # warm-up, excluded
     stamps, latencies, start, i = [], [], perf_counter(), 0
     deadline = start + a.minutes*60
     while perf_counter() < deadline:
         t = perf_counter(); work(i)
-        latencies.append((perf_counter()-t)*1000); stamps.append(t-start); i += 1
+        latencies.append((perf_counter()-t)*1000); stamps.append(t-start)
+        if a.realtime:  # idle until the clip's real duration has passed
+            from time import sleep
+            sleep(max(0.0, durations[i % len(durations)] - (perf_counter()-t)))
+        i += 1
         if i % 50 == 0:
             print(f"{stamps[-1]/60:5.1f} min  {i} runs  last {latencies[-1]:.1f} ms")
+    busy = sum(latencies)/1000/max(1e-9, perf_counter()-start)
     report = {"device": a.device, "platform": platform.platform(), "mode": a.mode,
+              "realtime": a.realtime, "busy_fraction": round(busy, 4),
               "minutes": a.minutes, "runs": len(latencies), "started_unix": time() - (perf_counter()-start),
               "latency_ms": latency_summary(latencies), **drift_percent(stamps, latencies),
               "definition": "100*(late p95 - early p95)/early p95, first vs last 20% of run",

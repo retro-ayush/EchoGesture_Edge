@@ -22,6 +22,7 @@ outputs/*
 !outputs/summary.json
 !outputs/validation.json
 !outputs/sustained_benchmark.json
+!outputs/power_realtime.json
 logs/
 .DS_Store
 
